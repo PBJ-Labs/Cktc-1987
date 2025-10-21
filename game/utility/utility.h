@@ -17,7 +17,18 @@ namespace game
         virtual ~level();
 
         int _mlvlId = 0;
+
+        const char* _mlvlname;
+        char lvlBuff[1024];
+
+        float _mlvltick = 0.0f;
+
+
+        bool blvlLoaded;
     }
+
+
+
 
   }
 
