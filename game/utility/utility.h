@@ -25,13 +25,41 @@ namespace game
 
 
         bool blvlLoaded;
-    }
+    };
+
+
+class ai{
+public:
+ ai();
+ virtual ~ai();
+
+ int _mAiId = 0;
+
+
+
+ const char* _mAiImage;
 
 
 
 
-  }
+ bool bAiMovable;
+
+
+
+
+ //===============
+ //  functions()
+ virtual void _funcSpawnAi(Ai& ai) = 0;
+ Ai& _funcReturnAi(Ai& ai);
 
 
 }
+
+
+
+
+  };
+
+
+};
 
